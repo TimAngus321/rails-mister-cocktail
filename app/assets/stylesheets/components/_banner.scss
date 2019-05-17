@@ -1,0 +1,15 @@
+.banner {
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  background-image: url("banner.jpg");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  h1 {
+    color: white;
+
+  }
+}
+
+

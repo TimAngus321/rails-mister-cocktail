@@ -1,2 +1,30 @@
-<h1>Cocktails#show</h1>
-<p>Find me in app/views/cocktails/show.html.erb</p>
+<div>
+  <h1><%= @cocktail.name %></h1>
+
+  <!-- List doses -->
+
+  <div class="cocktail-card">
+  <ul>
+    <% @cocktail.doses.each do |dose| %>
+      <li><%= dose.ingredient.name %>
+        <li><%= dose.description %></li>
+        <%= link_to 'Delete Dose', dose_path(dose) ,
+        method: :delete,
+        data: { conifrm: "are you sure?" } %>
+        </li>
+  <% end %>
+  </ul>
+</div>
+
+    <%= simple_form_for([@cocktail, @dose]) do |f| %>
+      <%= f.input :description %>
+      <%= f.association :ingredient, collection: Ingredient.all.order(:name) %>
+      <%= f.submit "Create a dose!", class: "btn btn-primary" %>
+    <% end %>
+
+    <br>
+
+    <%= link_to "Back to cocktails list", cocktails_path, class: "btn btn-primary" %>
+
+
+</div>
