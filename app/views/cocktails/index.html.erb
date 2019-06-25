@@ -1,6 +1,6 @@
 <div class="banner text-center">
   <ul>
-    <li><h1>Tim's Deadly Cocktails </h1></li>
+    <li><h1>Tim's Tasty Cocktails </h1></li>
     <li><h1>Become a Master Mixologist Today</h1></li>
     <li><div><%= link_to "Add a cocktail", new_cocktail_path, class: "cta-btn" %></div></li>
 
@@ -8,10 +8,14 @@
 </div>
 
 <div class="container">
-  <h1 class="grid-header">Cocktails</h1>
-  <div class="cocktail-grid">
-    <% @cocktails.each do |cocktail| %>
-      <h3><%= link_to cocktail.name, cocktail_path(cocktail) %></h3>
-    <% end %>
-  </div>
+  <h1 class="grid-header ">Cocktails</h1>
+    <div class="cocktail-grid">
+      <% @cocktails.each do |cocktail| %>
+      <h3><%= link_to cocktail.name, cocktail_path(cocktail), class: "cocktail-card" %></h3>
+      <% end %>
+      </div>
+    </div>
 </div>
+
+
+

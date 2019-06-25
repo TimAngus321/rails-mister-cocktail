@@ -8,6 +8,7 @@
   align-items: center;
   h1, h2 {
     color: #E7E7E7;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
   }
 
   ul {
@@ -50,12 +51,19 @@
 
 .grid-header {
   text-align: center;
-  margin: 15px 0;
+  margin: 50px 0;
 }
+
 .cocktail-grid {
     padding: 25px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-column-gap: 15px;
-    grid-row-gap: 15px
+    grid-column-gap: 25px;
+    grid-row-gap: 25px
 }
+
+.grid-item {
+  background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url;
+}
+
+
