@@ -11,18 +11,13 @@
   font-weight: bold;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
-  background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url();
-
+  transition: 0.3s;
 }
 
 .cocktail-card:hover {
   text-decoration: none;
   color:white;
   box-shadow: 0 0 15px rgba(0,0,0,0.8);
-<<<<<<< HEAD
-  transition: 0.8 ease-in-out ;
-=======
-  transition: box-shadow .2s ease;
->>>>>>> c98bf53512a86397f540684e2fceb9effa78d0b1
+  transition: 0.3s;
 }
 
