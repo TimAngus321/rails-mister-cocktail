@@ -59,11 +59,10 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-column-gap: 25px;
-    grid-row-gap: 25px
+    grid-row-gap: 25px;
+    text-decoration: none;
 }
 
-.grid-item {
-  background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url;
-}
+
 
 
