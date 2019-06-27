@@ -10,14 +10,18 @@
 <div class="container">
   <h1 class="grid-header ">Cocktails</h1>
     <div class="cocktail-grid">
-      <% @cocktails.each do |cocktail| %>
-      <h3><%= link_to cocktail.name, cocktail_path(cocktail), class: "cocktail-card" %></h3>
-      <% end %>
-      </div>
+          <% @cocktails.each do |cocktail| %>
+          <%= link_to cocktail_path(cocktail) do %>
+          <div class="cocktail-item">
+            <div><%= cocktail.name %></div>
+            <div><%= cl_image_tag cocktail.photo, height: 200, width: 300, crop: :fill %></div>
+          </div>
+            <% end %>
+          <% end %>
     </div>
-</div>
 
-<%#= cl_image_tag cocktail.photo, height: 300, width: 400, crop: :fill %>
+
+
 
 
 
