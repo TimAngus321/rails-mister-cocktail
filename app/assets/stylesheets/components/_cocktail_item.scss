@@ -1,0 +1,33 @@
+.cocktail-item {
+  border-radius: 5px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+
+.cocktail-item:hover {
+  color:white;
+  box-shadow: 0 0 20px rgba(0,0,0,0.8);
+  transition: 0.3s;
+}
+
+
+
+// .cocktail-item a {
+//   height: 180px;
+//   display: flex;
+//   text-align: center;
+//   justify-content: center;
+// }
+
+
