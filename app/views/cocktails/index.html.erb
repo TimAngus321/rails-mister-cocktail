@@ -13,8 +13,8 @@
           <% @cocktails.each do |cocktail| %>
           <%= link_to cocktail_path(cocktail) do %>
           <div class="cocktail-item">
-            <div><%= cocktail.name %></div>
-            <div><%= cl_image_tag cocktail.photo, height: 200, width: 300, crop: :fill %></div>
+            <%= cocktail.name %>
+             <%= cl_image_tag cocktail.photo, height: 200, width: 300, crop: :fill %>
           </div>
             <% end %>
           <% end %>
