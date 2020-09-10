@@ -1,24 +1,5 @@
-# README
+# Cocktail Maker App
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This was my first experience with OOP and the MVC model. This app also features some friend end work building componenets and using grid/flexbox.
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Check it out here (Deployed on Heroku's free plan): https://cryptic-hollows-89030.herokuapp.com/
